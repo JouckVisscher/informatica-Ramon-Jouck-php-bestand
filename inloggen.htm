@@ -5,6 +5,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
 <body>
 
+
+
 <div class="w3-container w3-olive">
     <img src="logo.png" alt="Person" style="padding:7px;width:110px" class="w3-round-xlarge">
 
@@ -12,19 +14,20 @@
 
 
 <div class="w3-display-topright">
-
+ 
   <div class="w3-circle" style="width:85px">
     <img src="img_avatar3.png"  alt="Person" style="padding:7px;width:85px" class="w3-circle" onclick="toggleMenu()"  >
   
-<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-right w3-text-black" style="width:200px;right:0;" id="mySidebar">
-  <a href="./index.htm" class="w3-bar-item w3-button">Homepagina </a>
+<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-right w3-text-black" style="width:200px;right:0;" id="mySidebar" >
+
+  <a href="./index.php" class="w3-bar-item w3-button">Homepagina </a>
   <a href="./registreren.htm" class="w3-bar-item w3-button">Registreren	</a>
-  <a href="./inloggen.htm" class="w3-bar-item w3-button">Inloggen</a>
+  <a href="./Inloggen.htm" class="w3-bar-item w3-button">Inloggen</a>
   <a href="./instellingen.htm" class="w3-bar-item w3-button">Instellingen</a>
 </div>
 
 
-
+ 
 
 
 
@@ -32,26 +35,9 @@
 
 
 
-<div class="w3-container">
-
 </div>
 
 </div>
-
-</div>
-
- <div class="w3-container w3-light-grey">
-
-
-
-
-<a href= "./chinese.htm" class="w3-bar-item w3-button w3-round-large"><h1>chinees</h1> 
-<img src="general-tso-chicken.webp" class="w3-round-large" width="400px" height="300px>
-<a href="./chinese.htm" class="image-button">
-    <span> </span>
-</a>
-</a>
-
 
 <script>
 function toggleMenu() {
@@ -66,5 +52,31 @@ function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
 }
 </script>
+
+<form class="w3-container w3-card-4 w3-light-gray">
+  <h2>Inloggen</h2>
+
+    <input class="w3-input w3-border w3-round-large w3-animate-input" 
+type="text" style="width:35%" placeholder="Gebruikersnaam">
+ <p>
+   <input class="w3-input w3-border w3-round-large w3-animate-input" 
+type="text" style="width:35%" placeholder="Wachtwoord">
+ </p>
+
+<p><a href= wachtwoord.htm>wachtwoord vergeten</a></p>
+ 
+ 
+ <a href="index.php" button class="w3-btn w3-white w3-border w3-round-large">Inloggen</button></p>
+ 
+
+ 
+</form>
+
+</body>
+</html>
+
+
+
+
 </body>
 </html> 
