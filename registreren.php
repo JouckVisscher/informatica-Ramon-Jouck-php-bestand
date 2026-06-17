@@ -60,36 +60,37 @@ function w3_close() {
   <label>Voornaam</label>
   <input class="w3-input w3-border w3-round-large w3-animate-input"
 
-type="text" style="width:35%" placeholder="Voornaam"></p>
+type="text" style="width:35%" placeholder="Voornaam" name="voornaam"></p>
    <p>
   <label>Achternaam</label>
   <input class="w3-input w3-border w3-round-large w3-animate-input"
 
-type="text" style="width:35%" placeholder="Achternaam"></p>
+type="text" style="width:35%" placeholder="Achternaam" name="achternaam"></p>
 
   <p>
   <label>Gebruikersnaam</label>
   <input class="w3-input w3-border w3-round-large w3-animate-input"
 
-type="text" style="width:35%" placeholder="Gebruikersnaam"></p>
+type="text" style="width:35%" placeholder="Gebruikersnaam" name="gebruikersnaam"></p>
 
   <p>
   <label>Wachtwoord</label>
   <input class="w3-input w3-border w3-round-large w3-animate-input"
 
-type="text" style="width:35%" placeholder="Wachtwoord"></p>
+type="text" style="width:35%" placeholder="Wachtwoord" name="wachtwoord"></p>
 
   <p>
   <label>Email</label>
   <input class="w3-input w3-border w3-round-large w3-animate-input"
 
-type="text" style="width:35%" placeholder="Email"></p>
+type="text" style="width:35%" placeholder="Email" name="Email
+"></p>
 
  <p>
   <label>Telefoonnummer</label>
   <input class="w3-input w3-border w3-round-large w3-animate-input"
 
-type="text" style="width:35%" placeholder="Telefoonnummer"></p>
+type="text" style="width:35%" placeholder="Telefoonnummer" name="telefoonnummer"></p>
 
 <div class="w3-container">
 
