@@ -83,8 +83,7 @@ type="text" style="width:35%" placeholder="Wachtwoord" name="wachtwoord"></p>
   <label>Email</label>
   <input class="w3-input w3-border w3-round-large w3-animate-input"
 
-type="text" style="width:35%" placeholder="Email" name="Email
-"></p>
+type="text" style="width:35%" placeholder="Email" name="Email"></p>
 
  <p>
   <label>Telefoonnummer</label>

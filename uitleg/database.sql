@@ -1,5 +1,5 @@
 CREATE DATABASE IF NOT EXISTS oefenen;
-USE oefenen;
+USE lekker eten;
  
 CREATE TABLE IF NOT EXISTS accounts (
   username varchar(50)  NOT NULL PRIMARY KEY,
@@ -16,4 +16,11 @@ CREATE TABLE IF NOT EXISTS scores (
   FOREIGN KEY (username) REFERENCES accounts(username)
     ON DELETE CASCADE /* Als het account verwijderd wordt, verwijder ook de score */
     ON UPDATE CASCADE /* Als de username in accounts verandert, verander die dan ook in de tabel scores */
+);
+
+CREATE TABLE IF NOT EXISTS accounts (
+    username  VARCHAR(50)  NOT NULL PRIMARY KEY,
+    password  VARCHAR(255) NOT NULL,
+    name      VARCHAR(100) NOT NULL,
+    email     VARCHAR(100) NOT NULL UNIQUE
 );
