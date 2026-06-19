@@ -8,8 +8,8 @@ Volg het onderstaande stappenplan om het menu van je website in een apart bestan
 
 1. Maak een nieuw bestand aan in hoofdmap, en noem het “menu.php”.
 2. Uitleg: een php-bestand zal door je browser als gewoon html-bestand behandeld worden. Het enige verschil is dat een php-bestand eerst door de server verwerkt moet worden.
-3. Kopieer de code voor je menu uit index.html naar menu.php.
-4. Verander de naam van index.html naar index.php.
+3. Kopieer de code voor je menu uit index.phpl naar menu.php.
+4. Verander de naam van index.phpl naar index.php.
 5. Verwijder het menu uit index.php, en zet daar de volgende regel neer:
    
    ```<?php include("menu.php"); ?>```
