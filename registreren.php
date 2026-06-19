@@ -19,7 +19,7 @@
 
   <a href="./index.php" class="w3-bar-item w3-button">Homepagina </a>
   <a href="./registreren.php" class="w3-bar-item w3-button">Registreren	</a>
-  <a href="./Inloggen.php" class="w3-bar-item w3-button">Inloggen</a>
+  <a href="./inloggen.php" class="w3-bar-item w3-button">Inloggen</a>
   <a href="./instellingen.php" class="w3-bar-item w3-button">Instellingen</a>
 </div>
 
