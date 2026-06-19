@@ -57,7 +57,7 @@ function w3_close() {
 
 
   <p>
-  <label>Voornaam</label>
+  <label><b>Voornaam<b/></label>
   <input class="w3-input w3-border w3-round-large w3-animate-input"
 
 type="text" style="width:35%" placeholder="Voornaam" name="voornaam"></p>
