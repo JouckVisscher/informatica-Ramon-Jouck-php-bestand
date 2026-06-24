@@ -40,9 +40,9 @@
 
 
 
-<a href= "./chinese.htm" class="w3-bar-item w3-button w3-round-large"><h1>chinees</h1> 
+<a href= "./chinese.php" class="w3-bar-item w3-button w3-round-large"><h1>chinees</h1> 
 <img src="general-tso-chicken.webp" class="w3-round-large" width="400px" height="300px>
-<a href="./chinese.htm" class="image-button">
+<a href="./chinese.php" class="image-button">
     <span> </span>
 </a>
 </a>

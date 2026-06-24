@@ -26,11 +26,11 @@ In je browser ziet dat er zo uit:
 
 ![](media/3-1-formulieren/image_1.png)
 
-Open het bestand “form1.html” en test het zelf maar eens. Verzend je naam en kijk wat er gebeurt met de URL in de adresbalk van je browser.
+Open het bestand “form1.phpl” en test het zelf maar eens. Verzend je naam en kijk wat er gebeurt met de URL in de adresbalk van je browser.
 
 In de code zie je dat de inputs allebei minimaal één **attribuut** hebben: `type="…"`. Dat is verplicht bij een input, omdat het aangeeft wat je ermee kan: tekst invoeren, het formulier opsturen, een vinkje aanzetten, enzovoorts. Op W3Schools kan je alle opties vinden.
 
-Het **name-attribuut** is niet verplicht, maar die heb je wel altijd nodig behalve bij de submit-knop. Je hebt vast al gezien dat de “name” die hier is ingevoerd in de URL terug kwam toen je het formulier verstuurde: form1.html?naam=Paulus. Daar moeten we nog iets mee doen…
+Het **name-attribuut** is niet verplicht, maar die heb je wel altijd nodig behalve bij de submit-knop. Je hebt vast al gezien dat de “name” die hier is ingevoerd in de URL terug kwam toen je het formulier verstuurde: form1.phpl?naam=Paulus. Daar moeten we nog iets mee doen…
 
 ### Gegevens ontvangen
 

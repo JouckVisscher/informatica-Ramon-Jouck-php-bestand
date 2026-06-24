@@ -18,9 +18,9 @@
 <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-right w3-text-black" style="width:200px;right:0;" id="mySidebar">
 
   <a href="./index.php" class="w3-bar-item w3-button">Homepagina </a>
-  <a href="./registreren.htm" class="w3-bar-item w3-button">Registreren	</a>
-  <a href="./Inloggen.htm" class="w3-bar-item w3-button">Inloggen</a>
-  <a href="./instellingen.htm" class="w3-bar-item w3-button">Instellingen</a>
+  <a href="./registreren.php" class="w3-bar-item w3-button">Registreren	</a>
+  <a href="./inloggen.php" class="w3-bar-item w3-button">Inloggen</a>
+  <a href="./instellingen.php" class="w3-bar-item w3-button">Instellingen</a>
 </div>
 
 
@@ -57,7 +57,7 @@ function w3_close() {
 
 
   <p>
-  <label>Voornaam</label>
+  <label><b>Voornaam<b/></label>
   <input class="w3-input w3-border w3-round-large w3-animate-input"
 
 type="text" style="width:35%" placeholder="Voornaam" name="voornaam"></p>
@@ -83,7 +83,8 @@ type="text" style="width:35%" placeholder="Wachtwoord" name="wachtwoord"></p>
   <label>Email</label>
   <input class="w3-input w3-border w3-round-large w3-animate-input"
 
-type="text" style="width:35%" placeholder="Email" name="Email"></p>
+type="text" style="width:35%" placeholder="Email" name="Email
+"></p>
 
  <p>
   <label>Telefoonnummer</label>
@@ -96,7 +97,7 @@ type="text" style="width:35%" placeholder="Telefoonnummer" name="telefoonnummer"
 
 
  
-    <a href="geregistreerd.htm" class="w3-button w3-white w3-border">Registreren</a>
+    <a href="geregistreerd.php" class="w3-button w3-white w3-border">Registreren</a>
 </p>
   
 
