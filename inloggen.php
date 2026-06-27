@@ -11,33 +11,43 @@
 <?php
 include("dbconn.php");
 
+$query = "";
 $message = "";
 
+// Score opvragen
 if (isset($_GET["naam"])) {
 
+    // Lees de opgestuurde gegevens uit
     $opgestuurde_naam = mysqli_real_escape_string($con, $_GET["naam"]);
 
-    $query = "SELECT username, score
-              FROM scores
-              WHERE username='$opgestuurde_naam'";
+    // Maak de query
+    $query = "
+        SELECT username, score
+        FROM scores
+        WHERE username = '$opgestuurde_naam'
+    ";
 
-    $result = mysqli_query($con, $query);
+    // Voer de query uit
+    if ($result = mysqli_query($con, $query)) {
 
-    if ($result && mysqli_num_rows($result) > 0) {
+        if (mysqli_num_rows($result) > 0) {
+            $rij = mysqli_fetch_assoc($result);
+            $opgehaalde_score = $rij["score"];
 
-        $rij = mysqli_fetch_assoc($result);
-        $message = "De score van " . $rij["username"] . " is " . $rij["score"] . ".";
+            $message = "De score van $opgestuurde_naam is $opgehaalde_score.";
+        } else {
+            $message = "Gebruiker niet gevonden.";
+        }
 
     } else {
-
-        $message = "Gebruiker niet gevonden.";
-
+        $message = "Error: $query<br>" . mysqli_error($con);
     }
 
     mysqli_close($con);
 
 } else {
 
+    $query = "niets";
     $message = "Er is nog niets opgestuurd.";
 
 }
@@ -74,6 +84,35 @@ if (isset($_GET["naam"])) {
     <p><?php echo $message; ?></p>
 </div>
 
+<!-- Scoreformulier -->
+<form class="w3-container w3-card-4 w3-light-gray" method="get">
+
+    <h2>Score opvragen</h2>
+
+    <p>
+        <label>Naam</label>
+        <input
+            class="w3-input w3-border w3-round-large"
+            type="text"
+            name="naam"
+            placeholder="Gebruikersnaam"
+            required>
+    </p>
+
+    <button class="w3-button w3-white w3-border w3-round-large" type="submit">
+        Opvragen
+    </button>
+
+</form>
+
+<div class="w3-container">
+    <p>De uitgevoerde query is:</p>
+    <pre><?php echo $query; ?></pre>
+</div>
+
+<br>
+
+<!-- Inlogformulier -->
 <form class="w3-container w3-card-4 w3-light-gray"
       action="index.php"
       method="post">
